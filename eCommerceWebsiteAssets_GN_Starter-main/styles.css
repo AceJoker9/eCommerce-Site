@@ -1,19 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
-nav {
-    display: flex;
-    justify-content: space-between;
+.product-grid {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
 }
 
-nav ul {
-    display:flex; 
-    list-style: none;
+.product-grid img {
+    width:100%;
+    height: auto;
 }
 
-nav ul li {
-    margin-right: 20px;
+header h2 {
+    border-bottom: 2px solid black;
 }
 
-nav ul li last-of-type {
-    margin-right: 0;
+footer {
+    background-color: peachpuff;
+}
+
+.image-container img {
+    max-width: 100%;
+    height:auto;
+}
+
+.about-us{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.about-us img:first-child{
+    margin-right:10px
+}
+
+.about-us img:last-child{
+    margin-left:10px;
+}
+
+.about-us p {
+flex-grow: 1;
+text-align:center;
 }
